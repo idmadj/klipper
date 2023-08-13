@@ -42,7 +42,6 @@ class FirmwareRetraction:
                                               self.unretract_speed, minval=1)
         self.unretract_length = (self.retract_length
                                  + self.unretract_extra_length)
-        self.is_retracted = False
     cmd_GET_RETRACTION_help = ("Report firmware retraction paramters")
     def cmd_GET_RETRACTION(self, gcmd):
         gcmd.respond_info("RETRACT_LENGTH=%.5f RETRACT_SPEED=%.5f"
